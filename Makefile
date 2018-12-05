@@ -1,5 +1,5 @@
 PKG_NAME := qtx11extras
-URL = http://download.qt.io/official_releases/qt/5.11/5.11.2/submodules/qtx11extras-everywhere-src-5.11.2.zip
+URL = https://download.qt.io/official_releases/qt/5.12/5.12.0/submodules/qtx11extras-everywhere-src-5.12.0.tar.xz
 ARCHIVES = 
 
 include ../common/Makefile.common
