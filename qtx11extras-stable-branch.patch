@@ -1,6 +1,10 @@
 Jani Heikkinen (1):
       Bump version
 
+Tarja Sundqvist (2):
+      Update commercial license headers
+      Revert "Update commercial license headers"
+
 diff --git a/dist/changes-5.15.2 b/dist/changes-5.15.2
 deleted file mode 100644
 index 3f584ae..0000000
