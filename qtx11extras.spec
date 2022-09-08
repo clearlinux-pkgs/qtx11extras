@@ -4,7 +4,7 @@
 #
 Name     : qtx11extras
 Version  : 5.15.2
-Release  : 30
+Release  : 31
 URL      : https://download.qt.io/official_releases/qt/5.15/5.15.2/submodules/qtx11extras-everywhere-src-5.15.2.tar.xz
 Source0  : https://download.qt.io/official_releases/qt/5.15/5.15.2/submodules/qtx11extras-everywhere-src-5.15.2.tar.xz
 Summary  : No detailed summary available
@@ -68,14 +68,14 @@ test -r config.log && cat config.log
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1655666173
+export SOURCE_DATE_EPOCH=1662658378
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/qtx11extras
-cp %{_builddir}/qtx11extras-everywhere-src-5.15.2/LICENSE.FDL %{buildroot}/usr/share/package-licenses/qtx11extras/61907422fefcd2313a9b570c31d203a6dbebd333
-cp %{_builddir}/qtx11extras-everywhere-src-5.15.2/LICENSE.GPL2 %{buildroot}/usr/share/package-licenses/qtx11extras/4cc77b90af91e615a64ae04893fdffa7939db84c
-cp %{_builddir}/qtx11extras-everywhere-src-5.15.2/LICENSE.GPL3 %{buildroot}/usr/share/package-licenses/qtx11extras/8624bcdae55baeef00cd11d5dfcfa60f68710a02
-cp %{_builddir}/qtx11extras-everywhere-src-5.15.2/LICENSE.GPL3-EXCEPT %{buildroot}/usr/share/package-licenses/qtx11extras/e93757aefa405f2c9a8a55e780ae9c39542dfc3a
-cp %{_builddir}/qtx11extras-everywhere-src-5.15.2/LICENSE.LGPL3 %{buildroot}/usr/share/package-licenses/qtx11extras/f45ee1c765646813b442ca58de72e20a64a7ddba
+cp %{_builddir}/qtx11extras-everywhere-src-%{version}/LICENSE.FDL %{buildroot}/usr/share/package-licenses/qtx11extras/61907422fefcd2313a9b570c31d203a6dbebd333 || :
+cp %{_builddir}/qtx11extras-everywhere-src-%{version}/LICENSE.GPL2 %{buildroot}/usr/share/package-licenses/qtx11extras/4cc77b90af91e615a64ae04893fdffa7939db84c || :
+cp %{_builddir}/qtx11extras-everywhere-src-%{version}/LICENSE.GPL3 %{buildroot}/usr/share/package-licenses/qtx11extras/8624bcdae55baeef00cd11d5dfcfa60f68710a02 || :
+cp %{_builddir}/qtx11extras-everywhere-src-%{version}/LICENSE.GPL3-EXCEPT %{buildroot}/usr/share/package-licenses/qtx11extras/e93757aefa405f2c9a8a55e780ae9c39542dfc3a || :
+cp %{_builddir}/qtx11extras-everywhere-src-%{version}/LICENSE.LGPL3 %{buildroot}/usr/share/package-licenses/qtx11extras/f45ee1c765646813b442ca58de72e20a64a7ddba || :
 %make_install
 
 %files
